@@ -1,6 +1,16 @@
 {% extends "_base.html" %}
 {% block title %} Главная {% endblock %}
+{% load static %}
 
 {% block content %}
+	
+	<h1>Main</h1>
+
+	{% for theme in themes %}
+		<p>
+			<img src="{{ theme.image.url }}" alt="">
+			<a href="#">{{ theme.title }}</a>
+		</p>
+	{% endfor %}
 
 {% endblock %}
