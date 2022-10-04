@@ -18,4 +18,4 @@ class Theme(models.Model):
 		return super().save(*args, **kwargs)
 
 	def get_absolute_url(self):
-		return reverse("theme_detail/", kwargs={"slug": self.slug})
+		return reverse("theme_detail", kwargs={"slug": self.slug})

@@ -9,7 +9,7 @@
 	{% for theme in themes %}
 		<p>
 			<img src="{{ theme.image.url }}" alt="">
-			<a href="#">{{ theme.title }}</a>
+			<a href="{{ theme.get_absolute_url }}">{{ theme.title }}</a>
 		</p>
 	{% endfor %}
 

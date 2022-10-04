@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block title %} {{ theme.title }} {% endblock %}
+
+
+{% block content %}
+	
+	<div>
+		<h3>{{ theme.title }}</h3>
+		<p>{{ theme.description|safe }}</p>
+	</div>
+
+{% endblock %}
